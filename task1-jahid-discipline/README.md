@@ -27,6 +27,27 @@ average than teams eliminated in the group stage?
 | Fouls per Match | Fls ÷ MP |
 | Stage | `Knockout` or `Eliminated (Group Stage)` |
 
+## Data Acquisition (Automated)
+
+`fetch_data_automated.py` fetches the dataset directly from FBref and
+Wikipedia via Python (`requests` + `pandas.read_html`), instead of manual
+copy-paste:
+
+1. Downloads the Squad Standard Stats and Squad Miscellaneous Stats tables
+   from FBref and merges them on `Squad`.
+2. Computes `Fouls per Match` = `Fls` ÷ `MP`.
+3. Scrapes the Wikipedia "2026 FIFA World Cup knockout stage" page to
+   programmatically identify which 32 teams reached the Round of 32, and
+   labels every team as `Knockout` or `Eliminated (Group Stage)`.
+4. Saves the result to `task1_discipline_data.csv`.
+
+Requests are paced (3s delay) to avoid overloading FBref's servers. Run it
+with:
+
+```bash
+python fetch_data_automated.py
+```
+
 ## Method
 
 1. **Data wrangling** — load and validate the dataset, split into two groups
@@ -73,6 +94,7 @@ python task1_discipline_analysis_pro.py --data path/to/other_file.csv
 
 ## Files in this Folder
 
+- `fetch_data_automated.py` — automated data acquisition (FBref + Wikipedia)
 - `task1_discipline_analysis_pro.py` — main analysis script
 - `task1_discipline_data.csv` — dataset
 - `boxplot_fouls_per_match.png` / `histogram_fouls_per_match.png` — generated
