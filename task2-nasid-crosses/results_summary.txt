@@ -9,7 +9,7 @@ ANALYTIC QUESTION
   tournament-wide average for all outfield players?
 
 ------------------------------------------------------------
-SLIDE 2 - DATA PREPARATION AND SAMPLING
+SLIDE 3 - DATA PREPARATION AND SAMPLING
 ------------------------------------------------------------
   Outfield pool after filtering : 492
   Population (midfielders)      : 217
@@ -19,7 +19,7 @@ SLIDE 2 - DATA PREPARATION AND SAMPLING
   Minimum playing time          : 2.0 x 90 minutes
 
 ------------------------------------------------------------
-SLIDE 3 - DESCRIPTIVE STATISTICS
+SLIDE 4 - DESCRIPTIVE STATISTICS
 ------------------------------------------------------------
   Mean            : 1.874 crosses per 90
   Median          : 0.964
@@ -28,14 +28,14 @@ SLIDE 3 - DESCRIPTIVE STATISTICS
   Skewness        : 1.692
 
 ------------------------------------------------------------
-SLIDE 3 - ASSUMPTIONS AND CONFIDENCE INTERVAL
+SLIDE 5 - ASSUMPTIONS AND CONFIDENCE INTERVAL
 ------------------------------------------------------------
   Shapiro-Wilk p-value : 0.0000
   Normality            : questionable, CLT applies
   95% CI               : [1.244, 2.504]
 
 ------------------------------------------------------------
-SLIDE 3 - HYPOTHESIS TEST
+SLIDE 6 - HYPOTHESIS TEST
 ------------------------------------------------------------
   Benchmark      : 1.522
   Sample mean    : 1.874
@@ -47,7 +47,7 @@ SLIDE 3 - HYPOTHESIS TEST
   Wilcoxon check : p = 0.6084
 
 ------------------------------------------------------------
-SLIDE 4 - SENSITIVITY CHECK (benchmark excludes midfielders)
+SLIDE 7 - SENSITIVITY CHECK (benchmark excludes midfielders)
 ------------------------------------------------------------
   Benchmark   : 1.194
   t statistic : 2.1705
